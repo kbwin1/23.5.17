@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+    <div id="Board">
+        <ul>
+            {% for line in board %}
+            <li class="raw">{{line}}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="search" >
+    <label for="word">Word</label> <input id="word" type="text">
+    <button id="search" >Search</button>
+    </div>
+    <div id="Founds" >
+        <ul id="words_found">
+        </ul>
+    </div>
+    <form class="search" action="/game">
+        <button>New Board</button>
+    </form>
+    <div id="score">
+        <h2 id="score_show">Score:0</h2>
+    </div>
+    <h2 id="timer" >Seconds:</h2>
+    <h3 class="name_dis" id="max_score">Max Score:{{score}}</h3>
+    <h3 class="plays_dis" >TImes Play:{{plays}}</h3>
+</body>
+<script src="/static/app.js"></script>
+<script src="http://unpkg.com/axios/dist/axios.min.js" ></script>
+<script>let game=new Game()</script>
+</html>

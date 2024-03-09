@@ -1,0 +1,67 @@
+body{
+    background-color: aqua;
+}
+h1{
+    text-align: center;
+    font-family: sans-serif;
+}
+.raw{
+    list-style: none;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 45px;
+    text-align: center;
+}
+.search{
+    text-align: center;
+}
+button{
+    border-radius: 10px;
+    margin: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+label{
+    font-weight: bold;
+    font-size: 25px;
+}
+#score{
+    position: absolute;
+    top: 0;
+}
+#Founds{
+    border: 1px black solid;
+    height: 20%;
+}
+.msg{
+    color: red;
+    font-size: 25px;
+}
+.name_dis{
+    font-family: sans-serif;
+    position: absolute;
+    top: 0;
+    right: 40px;
+}
+.plays_dis{
+    font-family: sans-serif;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+
+}
+ul li{
+    font-family: sans-serif;
+    list-style: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+#timer{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+}
